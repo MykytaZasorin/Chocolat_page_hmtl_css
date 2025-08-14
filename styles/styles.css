@@ -33,7 +33,6 @@ ul {
     font-style: italic;
     font-weight: 700;
     font-size: 14px;
-    /* line-height: 20px; */
     line-height: 1.28;
     letter-spacing: -0.03em;
     color: var(--black);
@@ -57,7 +56,12 @@ ul {
     height: 28px;
     width: 28px;
     margin-left: auto;
-    background: black;
+    background: none;
     border: none;
     cursor: pointer;
+}
+
+.header-svg-menu {
+    fill: #100e0b;
+    stroke: #0a0602;
 }
