@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -17,23 +20,28 @@
     <header class="header-section">
       <div class="header-div">
         <div class="header-div-logo">
-          <p>simply chocolate</p>
-          <svg class="header-svg" width="21" height="21">
+          <p class="header-logo-text">simply chocolate</p>
+          <svg class="header-svg" width="21" height="22">
             <use href="./images/icons/icons.svg#icon-chocolate"></use>
           </svg>
         </div>
-        <ul>
-          <li>Home</li>
-          <li>How it's made?</li>
-          <li>Chocolate is loved</li>
-        </ul>
-        <ul>
+        <button type="button" class="header-menu-button">
+          <svg class="header-svg-menu" width="28" height="28">
+            <use href="./images/icons/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <!-- <ul class="header-drop-menu">
+          <li class="header-drop-item">Home</li>
+          <li class="header-drop-item">How it's made?</li>
+          <li class="header-drop-item">Chocolate is loved</li>
+        </ul> -->
+        <!-- <ul>
           <svg class="instagram-logo" width="" height="">
             <use href=""></use>
           </svg>
           <svg class="twitter-logo" width="" height="">
             <use href=""></use>
-          </svg>
+          </svg> -->
         </ul>
       </div>
     </header>

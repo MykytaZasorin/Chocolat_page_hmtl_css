@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --black: #111;
+    --orange: #fd9222;
+    --violet: #1e1823;
+    --white: #fff;
+}
+
 body {
     max-width: 335px;
+    font-family: "Montserrat", sans-serif;
 }
 
 ul {
@@ -18,9 +26,38 @@ ul {
 
 .header-div {
     display: flex;
+    position: relative;
+}
+
+.header-logo-text {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    /* line-height: 20px; */
+    line-height: 1.28;
+    letter-spacing: -0.03em;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.header-svg {
+    fill: #fff;
+    stroke: #fd9222;
+    margin-left: 4px;
 }
 
 .header-div-logo {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu-button {
+    height: 28px;
+    width: 28px;
+    margin-left: auto;
+    background: black;
+    border: none;
+    cursor: pointer;
 }
