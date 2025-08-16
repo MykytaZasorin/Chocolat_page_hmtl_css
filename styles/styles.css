@@ -12,7 +12,7 @@
 }
 
 body {
-    max-width: 335px;
+/*     max-width: 335px; */
     font-family: "Montserrat", sans-serif;
 }
 
@@ -21,12 +21,7 @@ ul {
 }
 
 .header-section {
-    margin: 20px 20px 14px 20px;
-}
-
-.header-div {
-    display: flex;
-    position: relative;
+    margin: 24px 32px 32px 32px;
 }
 
 .header-logo-text {
@@ -52,16 +47,77 @@ ul {
     align-items: center;
 }
 
+.header-div {
+    display: flex;
+    position: relative;
+}
+
 .header-menu-button {
     height: 28px;
     width: 28px;
     margin-left: auto;
-    background: none;
+    background: transparent;
     border: none;
     cursor: pointer;
+    display: none;
 }
 
 .header-svg-menu {
-    fill: #100e0b;
-    stroke: #0a0602;
+fill: #100e0b;
+stroke: #0a0602;
+}
+
+.header-tablet-dekstop {
+    display: flex;
+}
+
+.header-drop-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    .header-section {
+        margin: 20px 20px 14px 20px;
+    }
+
+    .header-menu-button {
+        height: 28px;
+        width: 28px;
+    }
+    
+    .header-menu-button {
+        height: 28px;
+        width: 28px;
+        margin-left: auto;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header-menu-button {
+        display: block;
+    }
+
+    .header-tablet-dekstop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+    .header-menu-button {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media (min-width: 1158px) {
+
+    .header-logo-text {
+        font-size: 18px;
+        line-height: 1.11;
+        letter-spacing: -0.03em;
+    }
 }
