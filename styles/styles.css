@@ -12,7 +12,6 @@
 }
 
 body {
-/*     max-width: 335px; */
     font-family: "Montserrat", sans-serif;
 }
 
@@ -20,8 +19,13 @@ ul {
     list-style-type: none;
 }
 
-.header-section {
-    margin: 24px 32px 32px 32px;
+.container {
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+.header-div {
+    margin: 20px 20px 14px 20px;
 }
 
 .header-logo-text {
@@ -29,7 +33,7 @@ ul {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.0-em;
     color: var(--black);
     text-transform: uppercase;
 }
@@ -55,7 +59,7 @@ ul {
 .header-menu-button {
     height: 28px;
     width: 28px;
-    margin-left: auto;
+    margin-right: 0;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -68,7 +72,7 @@ stroke: #0a0602;
 }
 
 .header-tablet-dekstop {
-    display: flex;
+    display: none;
 }
 
 .header-drop-menu {
@@ -77,47 +81,65 @@ stroke: #0a0602;
     align-items: center;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
     
-    .header-section {
-        margin: 20px 20px 14px 20px;
-    }
-
-    .header-menu-button {
-        height: 28px;
-        width: 28px;
-    }
-    
-    .header-menu-button {
-        height: 28px;
-        width: 28px;
-        margin-left: auto;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    .header-menu-button {
-        display: block;
-    }
-
-    .header-tablet-dekstop {
-        display: none;
-    }
+.header-menu-button {
+    height: 28px;
+    width: 28px;
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
-    .header-menu-button {
-        height: 24px;
-        width: 24px;
-    }
+/* greeting-section */
+
+.main-banner {
+    padding-bottom: 60px;
 }
 
-@media (min-width: 1158px) {
-
-    .header-logo-text {
-        font-size: 18px;
-        line-height: 1.11;
-        letter-spacing: -0.03em;
-    }
+.greeting-section {
+    background-image: image-set("../images/chocolate.jpg" 1x, "../images/chocolate@2x.jpg" 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 620px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
+
+.greeting-section-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.greeting-section-h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: var(--white);
+    margin: 0 auto;
+    width: 295px;
+}
+
+.btn-buy {
+    border-radius: 100px;
+    width: 120px;
+    height: 41px;
+    background: var(--orange);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white);
+}
+
+/* .btn-scroll {
+    display: block;
+} */
+
+
+
+
