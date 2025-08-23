@@ -34,6 +34,22 @@ button {
     margin: 0 auto;
 }
 
+.header-two {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+/* header */
+
 .header-div {
     margin: 20px 20px 14px 20px;
 }
@@ -248,24 +264,58 @@ stroke: #0a0602;
 }
 
 .taste-sensation-h {
-    text-align: center;
+    width: 283px;
 }
 
 .taste-sensation-p {
     text-align: center;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
 }
 
 .taste-sensation-list {
     display: flex;
     flex-direction: column;
+    gap: 20px
+}
+
+.taste-sensation-list li {
+    padding: 28px;
+    border-radius: 15px;
 }
 
 .taste-sensation-list li img {
     width: auto;
     margin: 0 auto;
-    background-color: transparent;
 }
 
 .taste-sensation-list li:first-child {
     background-color: var(--orange);
+}
+
+.taste-sensation-list li:nth-child(odd) {
+    color: var(--white);
+}
+
+.taste-sensation-list li:nth-child(even) {
+    border: 1px solid var(--orange);
+    background-color: transparent;
+}
+
+.taste-sensation-list li:nth-child(3) {
+    background-color: var(--black);
+}
+
+.taste-photo-p {
+    margin-top: 25px;
+}
+
+/* how its made section */
+
+.how-it-list-container {
+    padding: 20px 14px;
 }
