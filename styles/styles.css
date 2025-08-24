@@ -319,6 +319,10 @@ stroke: #0a0602;
 
 /* how its made section */
 
+.how-its-made-section {
+    padding-bottom: 60px;
+}
+
 .how-it-list-container {
     padding: 20px 14px;
 }
@@ -342,3 +346,26 @@ stroke: #0a0602;
     flex-direction: column;
     gap: 18px;
 }
+
+.how-it-list-cell {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+}
+
+.how-it-span {
+    width: 8px;
+    height: 8px;
+    background-color: var(--black);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.how-it-list-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+}
+
+/* chocolate is love section */
