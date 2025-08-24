@@ -84,7 +84,7 @@
                     <use href="./images/icons/icons.svg#icon-emoji"></use>
                   </svg>
                 </span>
-                <h3 class="about-section-h">Unsurpassed taste</h3>
+                <h3 class="about-section-h header-three">Unsurpassed taste</h3>
                 <p class="about-section-p">
                   Crafted with the finest quality cocoa beans and a dedication
                   to perfection, each bite is a decadent experience that simply
@@ -100,7 +100,7 @@
                     <use href="./images/icons/icons.svg#icon-сoin"></use>
                   </svg>
                 </span>
-                <h3 class="about-section-h">Affordable price</h3>
+                <h3 class="about-section-h header-three">Affordable price</h3>
                 <p class="about-section-p">
                   Indulge in high-quality chocolate without breaking the bank
                   with Simply Chocolate's selection of affordable treats. Enjoy
@@ -117,7 +117,7 @@
                     <use href="./images/icons/icons.svg#icon-spoon"></use>
                   </svg>
                 </span>
-                <h3 class="about-section-h">Own production</h3>
+                <h3 class="about-section-h header-three">Own production</h3>
                 <p class="about-section-p">
                   We take pride in our own production process, ensuring that
                   every step is carefully crafted to perfection. From selecting
@@ -208,27 +208,56 @@
           <h2 class="header-two">
             how it's <span class="text-orange">made?</span>
           </h2>
-          <img src="" />
+          <picture class="how-its-made-picture">
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/hit_section/him_desktop.jpg    1x,
+                ./images/hit_section/him_desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-widt: 768px)"
+              srcset="
+                ./images/hit_section/him_tablet.jpg    1x,
+                ./images/hit_section/him_tablet@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/hit_section/him_mob.jpg    1x,
+                ./images/hit_section/him_mob@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/hit_section/him_desktop.jpg"
+              alt="kitchen"
+              loading="lazy"
+            />
+          </picture>
           <div class="how-it-list-container">
-            <p>
+            <h3 class="header-three">
               Try our chocolates today and discover the perfect balance of
               flavor
-            </p>
-            <ul>
-              <li>
+            </h3>
+            <ul class="how-it-list">
+              <li class="how-it-list-cell">
                 Heat the milk in a saucepan without bringing it to a boil. Add
                 sugar and cocoa powder.
               </li>
-              <li>
+              <li class="how-it-list-cell">
                 At the same time, prepare a water bath. Melt the butter on it.
               </li>
-              <li>
+              <li class="how-it-list-cell">
                 "Mix" the milk mixture and already liquid butter. Mix thoroughly
                 with a silicone spatula so that the mass becomes uniform and
                 silky.
               </li>
-              <li>Heat the mixture over low heat, letting it barely boil.</li>
-              <li>
+              <li class="how-it-list-cell">
+                Heat the mixture over low heat, letting it barely boil.
+              </li>
+              <li class="how-it-list-cell">
                 Pour the chocolate into special containers (can be replaced with
                 ice molds). Allow to cool and harden.
               </li>
@@ -244,7 +273,7 @@
         <ul>
           <li>
             <img src="" alt="" />
-            <h3>Victoria Dobrzhanska</h3>
+            <h3 class="header-three">Victoria Dobrzhanska</h3>
             <p>
               I love this chocolate bar. Perfect combination of light crispy
               wafer, covered in a thin layer chocolate.
@@ -252,7 +281,7 @@
           </li>
           <li>
             <img src="" alt="" />
-            <h3>Nazar Babenko</h3>
+            <h3 class="header-three">Nazar Babenko</h3>
             <p>
               This chocolate confection is a delight! A delight! The wafer is
               light and crisp, the hazelnut cream is smooth, and the chocolate
@@ -261,7 +290,7 @@
           </li>
           <li>
             <img src="" alt="" />
-            <h3>Olena Kampusch</h3>
+            <h3 class="header-three">Olena Kampusch</h3>
             <p>
               Chocolate is a family favourite treat. Love the delicious smooth
               chocolate and the creaminess inside. The wafer is soft but
