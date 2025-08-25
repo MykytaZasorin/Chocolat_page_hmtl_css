@@ -428,6 +428,8 @@ stroke: #0a0602;
 
 .profiles-scroll {
     margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
 }
 
 .leave-rev {
@@ -436,4 +438,9 @@ stroke: #0a0602;
     padding: 12px 28px;
     width: 165px;
     height: 41px;
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
 }
