@@ -13,6 +13,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: #fafafa;
 }
 
 ul {
@@ -369,3 +370,70 @@ stroke: #0a0602;
 }
 
 /* chocolate is love section */
+
+.choco-love-section {
+    padding: 0 20px 60px 20px;
+}
+
+.choco-love-container h2 {
+    margin-bottom: 74px;
+}
+
+.choco-love-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.choco-love-list-cell {
+    position: relative;
+    width: 335px;
+    padding: 104px 18px 42px 18px;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+    background: var(--white);
+}
+
+.choco-love-photo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.choco-love-photo img {
+    width: 80px;
+    height: 80px;
+}
+
+.choco-love-photo h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--black);
+}
+
+.profiles-scroll {
+    margin-bottom: 32px;
+}
+
+.leave-rev {
+    border: 1px solid var(--orange);
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 165px;
+    height: 41px;
+}
