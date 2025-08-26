@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fafafa;
+    }
+
+    .slider {
+      position: relative;
+      width: 350px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .text {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .dots {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #ddd;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .dot.active {
+      background: orange;
+      width: 32px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="slide active">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+      <div class="name">Victoria Dobrzhanska</div>
+      <div class="text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</div>
+    </div>
+
+    <div class="slide">
+      <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
+      <div class="name">John Smith</div>
+      <div class="text">This is the best coffee I’ve ever tasted. Strong, rich, and absolutely amazing!</div>
+    </div>
+
+    <div class="slide">
+      <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="">
+      <div class="name">Anna Brown</div>
+      <div class="text">I enjoy this tea every morning. It’s refreshing and gives me energy for the whole day.</div>
+    </div>
+
+    <div class="dots">
+      <div class="dot active" onclick="showSlide(0)"></div>
+      <div class="dot" onclick="showSlide(1)"></div>
+      <div class="dot" onclick="showSlide(2)"></div>
+    </div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+
+    function showSlide(index) {
+      slides.forEach((s, i) => {
+        s.classList.toggle("active", i === index);
+        dots[i].classList.toggle("active", i === index);
+      });
+      currentSlide = index;
+    }
+
+    // Можно добавить автопереключение каждые 5 секунд
+    setInterval(() => {
+      let next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }, 5000);
+  </script>
+</body>
+</html>

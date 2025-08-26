@@ -286,56 +286,62 @@
           <h2 class="header-two">
             <span class="text-orange">chocolate</span> is loved
           </h2>
-          <ul class="choco-love-list">
-            <li class="choco-love-list-cell">
-              <div class="choco-love-photo">
-                <img
-                  src="./images/profiles/victoria_dobrz.jpg"
-                  width="80"
-                  height="80"
-                  alt="our specialist Victoria"
-                />
-                <h3 class="header-three">Victoria Dobrzhanska</h3>
-              </div>
-              <p>
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
-            </li>
-            <li class="choco-love-list-cell">
-              <div class="choco-love-photo">
-                <img
-                  src="./images/profiles/nazar_babenko.jpg"
-                  width="80"
-                  height="80"
-                  alt="our specialist Victoria"
-                />
-                <h3 class="header-three">Nazar Babenko</h3>
-              </div>
-              <p>
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
-            </li>
-            <li class="choco-love-list-cell">
-              <div class="choco-love-photo">
-                <img
-                  src="./images/profiles/olena_campusch.jpg"
-                  width="80"
-                  height="80"
-                  alt="our specialist Victoria"
-                />
-                <h3 class="header-three">Olena Kampusch</h3>
-              </div>
-              <p>
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
-            </li>
-          </ul>
-          <p class="profiles-scroll">scroll menu</p>
+          <div class="choco-love-slider">
+            <ul class="choco-love-list">
+              <li class="choco-love-list-cell">
+                <div class="choco-love-photo">
+                  <img
+                    src="./images/profiles/victoria_dobrz.jpg"
+                    width="80"
+                    height="80"
+                    alt="our specialist Victoria"
+                  />
+                  <h3 class="header-three">Victoria Dobrzhanska</h3>
+                </div>
+                <p>
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
+              </li>
+              <li class="choco-love-list-cell">
+                <div class="choco-love-photo">
+                  <img
+                    src="./images/profiles/nazar_babenko.jpg"
+                    width="80"
+                    height="80"
+                    alt="our specialist Victoria"
+                  />
+                  <h3 class="header-three">Nazar Babenko</h3>
+                </div>
+                <p>
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
+              </li>
+              <li class="choco-love-list-cell">
+                <div class="choco-love-photo">
+                  <img
+                    src="./images/profiles/olena_campusch.jpg"
+                    width="80"
+                    height="80"
+                    alt="our specialist Victoria"
+                  />
+                  <h3 class="header-three">Olena Kampusch</h3>
+                </div>
+                <p>
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
+              </li>
+            </ul>
+            <div class="dots">
+              <div class="dot active" onclick="goToSlide(0)"></div>
+              <div class="dot" onclick="goToSlide(1)"></div>
+              <div class="dot" onclick="goToSlide(2)"></div>
+            </div>
+          </div>
           <button type="button" class="leave-rev">Leave a review</button>
         </div>
       </section>
@@ -366,5 +372,7 @@
         </ul>
       </footer>
     </main>
+
+    <script src="./js/slider.js"></script>
   </body>
 </html>

@@ -379,16 +379,25 @@ stroke: #0a0602;
     margin-bottom: 74px;
 }
 
+.choco-love-slider {
+    position: relative;
+}
+
 .choco-love-list {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     margin-bottom: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.choco-love-list::-webkit-scrollbar {
+    display: none;
 }
 
 .choco-love-list-cell {
     position: relative;
-    width: 335px;
+    flex: 0 0 335px;
     padding: 104px 18px 42px 18px;
     font-size: 14px;
     line-height: 129%;
@@ -426,12 +435,6 @@ stroke: #0a0602;
     color: var(--black);
 }
 
-.profiles-scroll {
-    margin-bottom: 32px;
-    display: flex;
-    justify-content: center;
-}
-
 .leave-rev {
     border: 1px solid var(--orange);
     border-radius: 100px;
@@ -443,4 +446,26 @@ stroke: #0a0602;
     font-weight: 600;
     font-size: 14px;
     text-align: center;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dot.active {
+    background: orange;
+    width: 32px;
+    border-radius: 10px;
 }
