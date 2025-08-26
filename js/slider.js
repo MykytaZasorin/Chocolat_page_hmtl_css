@@ -12,7 +12,8 @@ function goToSlide(index) {
   currentSlide = index;
 }
 
-setInterval(() => {
+/* setInterval(() => {
   let next = (currentSlide + 1) % slides.length;
   goToSlide(next);
 }, 5000);
+ */
