@@ -131,7 +131,11 @@ stroke: #0a0602;
 }
 
 .greeting-section {
-    background-image: image-set("../images/chocolate.jpg" 1x, "../images/chocolate@2x.jpg" 2x);
+    background-image: url("../images/chocolate.jpg");
+    background-image: -webkit-image-set(url("../images/chocolate.jpg") 1x,
+        url("../images/chocolate@2x.jpg") 2x);
+    background-image: image-set(url("../images/chocolate.jpg") 1x,
+        url("../images/chocolate@2x.jpg") 2x);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -471,4 +475,72 @@ stroke: #0a0602;
     background: orange;
     width: 32px;
     border-radius: 10px;
+}
+
+.leave-rev {
+    background-color: transparent;
+}
+
+/* footer */
+
+.footer {
+    background: var(--violet);
+    padding: 32px 20px;
+    color: var(--white);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.footer-greeting {
+    width: 300px;
+    height: auto;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-adress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-adress-list li a {
+    color: inherit;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.footer-head {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-feet {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-buttons {
+    display: flex;
 }
