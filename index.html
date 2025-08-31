@@ -399,6 +399,7 @@
               </address>
             </div>
           </div>
+          <span class="line-footer"></span>
           <div class="footer-feet">
             <ul class="footer-navigation">
               <li><a href="#Home">Home</a></li>
@@ -407,18 +408,25 @@
               <li><a href="#Top-sellers">Top sellers</a></li>
               <li><a href="#Chocolate-is-love">Chocolate is love</a></li>
             </ul>
-            <ul class="footer-buttons">
-              <li>
-                <label>
-                  <input type="email" />
-                </label>
-              </li>
-              <!-- <li>
-                <button class="button-subscribe" type="submit">
-                  Subscribe
-                </button>
-              </li> -->
-            </ul>
+            <form>
+              <ul class="footer-buttons">
+                <li>
+                  <input
+                    class="input-subscribe"
+                    type="email"
+                    name="user-email"
+                    required
+                    aria-label="Email"
+                    placeholder="Enter your email"
+                  />
+                </li>
+                <li>
+                  <button class="button-subscribe" type="submit">
+                    Subscribe
+                  </button>
+                </li>
+              </ul>
+            </form>
           </div>
         </div>
       </footer>
