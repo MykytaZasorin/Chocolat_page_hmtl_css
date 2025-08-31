@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header class="container header-section">
+    <header class="container header-section section">
       <div class="header-div">
         <div class="header-div-logo">
           <p class="header-logo-text">simply chocolate</p>
@@ -46,7 +46,13 @@
           </svg>
         </div>
         <button type="button" class="header-menu-button">
-          <svg class="header-svg-menu" width="28" height="28" title="burger">
+          <svg
+            class="header-svg-menu"
+            width="28"
+            height="28"
+            title="burger"
+            aria-label="Menu"
+          >
             <use href="./images/icons/icons.svg#icon-menu-03"></use>
           </svg>
         </button>
@@ -64,7 +70,7 @@
             </li>
             <li>
               <svg class="twitter-logo" width="24" height="24">
-                <use href="/images/icons/icons.svg#icon-twitter"></use>
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
               </svg>
             </li>
           </ul>
@@ -74,7 +80,7 @@
 
     <main>
       <!--       greeting section -->
-      <section class="main-banner">
+      <section class="main-banner section" id="Home">
         <div class="container greeting-section">
           <h1 class="greeting-section-h1">
             Treat yourself or a loved one <br />
@@ -86,7 +92,12 @@
             <button type="button" class="btn-scroll">
               scroll down
               <span class="svg-background">
-                <svg class="scroll-svg" width="16" height="16">
+                <svg
+                  class="scroll-svg"
+                  width="16"
+                  height="16"
+                  aria-label="scroll-down"
+                >
                   <use href="./images/icons/icons.svg#icon-angle"></use>
                 </svg>
               </span>
@@ -95,7 +106,7 @@
         </div>
       </section>
       <!-- about us section -->
-      <section class="section-about">
+      <section class="section-about section" id="Top-sellers">
         <div class="container section-about-container">
           <ul class="section-about-list">
             <li class="section-about-cell">
@@ -151,7 +162,7 @@
         </div>
       </section>
       <!-- taste sensation -->
-      <section class="section-taste">
+      <section class="section-taste section" id="Our-products">
         <div class="container taste-sensation-container">
           <h2 class="taste-sensation-h header-two">
             It all adds up to one exceptional
@@ -224,7 +235,7 @@
         </div>
       </section>
       <!-- how its made -->
-      <section class="how-its-made-section">
+      <section class="how-its-made-section section" id="How-it's-made">
         <div class="container how-its-made">
           <h2 class="header-two">
             how it's <span class="text-orange">made?</span>
@@ -238,7 +249,7 @@
               "
             />
             <source
-              media="(min-widt: 768px)"
+              media="(min-width: 768px)"
               srcset="
                 ./images/hit_section/him_tablet.jpg    1x,
                 ./images/hit_section/him_tablet@2x.jpg 2x
@@ -302,7 +313,7 @@
         </div>
       </section>
       <!-- chocolate is loved -->
-      <section class="choco-love-section">
+      <section class="choco-love-section section" id="Chocolate-is-love">
         <div class="container choco-love-container">
           <h2 class="header-two">
             <span class="text-orange">chocolate</span> is loved
@@ -315,7 +326,7 @@
                     src="./images/profiles/victoria_dobrz.jpg"
                     width="80"
                     height="80"
-                    alt="our specialist Victoria"
+                    alt="Our specialist Victoria"
                   />
                   <h3 class="header-three">Victoria Dobrzhanska</h3>
                 </div>
@@ -330,7 +341,7 @@
                     src="./images/profiles/nazar_babenko.jpg"
                     width="80"
                     height="80"
-                    alt="our specialist Victoria"
+                    alt="Our specialist Nazar"
                   />
                   <h3 class="header-three">Nazar Babenko</h3>
                 </div>
@@ -346,7 +357,7 @@
                     src="./images/profiles/olena_campusch.jpg"
                     width="80"
                     height="80"
-                    alt="our specialist Victoria"
+                    alt="Our specialist Olena"
                   />
                   <h3 class="header-three">Olena Kampusch</h3>
                 </div>
@@ -367,7 +378,7 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer section">
         <div class="container footer-container">
           <div class="footer-head">
             <p class="footer-greeting">
@@ -390,11 +401,11 @@
           </div>
           <div class="footer-feet">
             <ul class="footer-navigation">
-              <li>Home</li>
-              <li>How it's made?</li>
-              <li>Our products</li>
-              <li>Top sellers</li>
-              <li>Chocolate is love</li>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#How-it's-made">How it's made?</a></li>
+              <li><a href="#Our-products">Our products</a></li>
+              <li><a href="#Top-sellers">Top sellers</a></li>
+              <li><a href="#Chocolate-is-love">Chocolate is love</a></li>
             </ul>
             <ul class="footer-buttons">
               <li>
@@ -402,9 +413,11 @@
                   <input type="email" />
                 </label>
               </li>
-              <li>
-                <button type="submit">Subscribe</button>
-              </li>
+              <!-- <li>
+                <button class="button-subscribe" type="submit">
+                  Subscribe
+                </button>
+              </li> -->
             </ul>
           </div>
         </div>
