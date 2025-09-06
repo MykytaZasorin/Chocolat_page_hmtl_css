@@ -684,18 +684,18 @@ stroke: #0a0602;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .mobile-menu.is-open {
+.mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-} */
+}
 
 .mob-button-close {
     stroke: var(--white);

@@ -1,18 +1,19 @@
 (() => {
-  const refs = {
-    // Додати атрибут data-modal-open на кнопку відкриття
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    // Додати атрибут data-modal-close на кнопку закриття
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    // Додати атрибут data-modal на бекдроп модалки
-    modal: document.querySelector("[data-modal]"),
-  };
+  const openBtns = document.querySelectorAll("[data-modal-open]");
+  const closeBtns = document.querySelectorAll("[data-modal-close]");
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  openBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const modalName = btn.getAttribute("data-modal-open");
+      const modal = document.querySelector(`[data-modal="${modalName}"]`);
+      modal.classList.add("is-open");
+    });
+  });
 
-  function toggleModal() {
-    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
-    refs.modal.classList.toggle("is-open");
-  }
+  closeBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const modal = btn.closest("[data-modal]");
+      modal.classList.remove("is-open");
+    });
+  });
 })();

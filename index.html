@@ -45,7 +45,7 @@
             <use href="./images/icons/icons.svg#icon-chocolate"></use>
           </svg>
         </div>
-        <button type="button" class="header-menu-button">
+        <button type="button" class="header-menu-button" data-modal-open="menu">
           <svg
             class="header-svg-menu"
             width="28"
@@ -314,7 +314,7 @@
         </div>
       </section>
       <!-- how its made -->
-      <section class="how-its-made-section section" id="How-it's-made">
+      <section class="how-its-made-section section" id="How-its-made">
         <div class="container how-its-made">
           <h2 class="header-two">
             how it's <span class="text-orange">made?</span>
@@ -481,7 +481,7 @@
         <div class="footer-feet">
           <ul class="footer-navigation">
             <li><a href="#Home">Home</a></li>
-            <li><a href="#How-it's-made">How it's made?</a></li>
+            <li><a href="#How-its-made">How it's made?</a></li>
             <li><a href="#Our-products">Our products</a></li>
             <li><a href="#Top-sellers">Top sellers</a></li>
             <li><a href="#Chocolate-is-love">Chocolate is love</a></li>
@@ -509,17 +509,32 @@
       </div>
     </footer>
 
-    <div class="mobile-menu">
-      <button type="button" class="mob-button-close" aria-label="Close window">
+    <div class="mobile-menu" data-modal="menu">
+      <button
+        type="button"
+        class="mob-button-close"
+        aria-label="Close window"
+        data-modal-close
+      >
         <svg class="mobile-menu-icon-close" width="14" height="14">
           <use href="./images/icons/icons.svg#icon-close"></use>
         </svg>
       </button>
       <div class="mobile-menu-wrapper">
         <ul class="mobile-menu-list-navigation">
-          <li>Home</li>
-          <li>How it's made?</li>
-          <li>Chocolate is loved</li>
+          <li>
+            <a class="mob-menu-link link" href="#Home">Home</a>
+          </li>
+          <li>
+            <a class="mob-menu-link link" href="#How-its-made"
+              >How it's made?</a
+            >
+          </li>
+          <li>
+            <a class="mob-menu-link link" href="#Chocolate-is-loved"
+              >Chocolate is loved</a
+            >
+          </li>
         </ul>
         <ul class="mobile-menu-list-socials">
           <li>
@@ -538,6 +553,7 @@
 
     <div class="pop-up"></div>
 
+    <script src="./js/burger.js"></script>
     <script src="./js/slider.js"></script>
   </body>
 </html>
