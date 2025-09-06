@@ -75,6 +75,61 @@
             </li>
           </ul>
         </div>
+        <div class="mobile-menu" data-modal="menu">
+          <button
+            type="button"
+            class="mob-button-close"
+            aria-label="Close window"
+            data-modal-close
+          >
+            <svg class="mobile-menu-icon-close" width="14" height="14">
+              <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu-wrapper">
+            <ul class="mobile-menu-list-navigation">
+              <li>
+                <a class="mob-menu-link link" href="#Home">Home</a>
+              </li>
+              <li>
+                <a class="mob-menu-link link" href="#How-its-made"
+                  >How it's made?</a
+                >
+              </li>
+              <li>
+                <a class="mob-menu-link link" href="#Chocolate-is-love"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu-list-socials">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  title="Our instagram"
+                  rel="no-referrer noopener"
+                >
+                  <svg class="mobile-menu-socials-icon" width="22" height="22">
+                    <use href="./images/icons/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/"
+                  target="_blank"
+                  title="Our twitter"
+                  rel="no-referrer noopener"
+                >
+                  <svg class="mobile-menu-socials-icon" width="22" height="22">
+                    <use href="./images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -453,7 +508,9 @@
               <div class="dot" onclick="goToSlide(2)"></div>
             </div>
           </div>
-          <button type="button" class="leave-rev">Leave a review</button>
+          <button type="button" class="leave-rev" data-modal-open="form">
+            Leave a review
+          </button>
         </div>
       </section>
     </main>
@@ -509,7 +566,7 @@
       </div>
     </footer>
 
-    <div class="mobile-menu" data-modal="menu">
+    <div class="pop-up" data-modal="form">
       <button
         type="button"
         class="mob-button-close"
@@ -520,52 +577,64 @@
           <use href="./images/icons/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <div class="mobile-menu-wrapper">
-        <ul class="mobile-menu-list-navigation">
-          <li>
-            <a class="mob-menu-link link" href="#Home">Home</a>
-          </li>
-          <li>
-            <a class="mob-menu-link link" href="#How-its-made"
-              >How it's made?</a
-            >
-          </li>
-          <li>
-            <a class="mob-menu-link link" href="#Chocolate-is-love"
-              >Chocolate is loved</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-menu-list-socials">
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              title="Our instagram"
-              rel="no-referrer noopener"
-            >
-              <svg class="mobile-menu-socials-icon" width="22" height="22">
-                <use href="./images/icons/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://x.com/"
-              target="_blank"
-              title="Our twitter"
-              rel="no-referrer noopener"
-            >
-              <svg class="mobile-menu-socials-icon" width="22" height="22">
-                <use href="./images/icons/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <h2>
+        leave a reviev <br />
+        about <span class="text-orange">our chocolate</span>
+      </h2>
+      <form class="pop-up-form">
+        <label
+          >Name
+          <div class="modal-label-container">
+            <input
+              class="pop-label-input"
+              type="text"
+              name="user-name"
+              maxlength="15"
+              required
+            />
+            <svg class="pop-input-svg" width="" height="">
+              <use href=""></use>
+            </svg>
+          </div>
+        </label>
+        <label
+          >Email
+          <div class="modal-label-container">
+            <input
+              class="pop-label-input"
+              type="text"
+              name="user-email"
+              maxlength="15"
+              required
+            />
+            <svg class="pop-input-svg" width="" height="">
+              <use href=""></use>
+            </svg>
+          </div>
+        </label>
+        <label
+          >Phone number
+          <div class="modal-label-container">
+            <input
+              class="pop-label-input"
+              type="text"
+              name="user-phone"
+              maxlength="15"
+              required
+            />
+            <svg class="pop-input-svg" width="" height="">
+              <use href=""></use>
+            </svg>
+          </div>
+        </label>
+        <div class="pop-up-textarea">
+          <label
+            >Comment
+            <textarea name="user-comment" placeholder="Enter text"></textarea>
+          </label>
+        </div>
+      </form>
     </div>
-
-    <div class="pop-up"></div>
 
     <script src="./js/burger.js"></script>
     <script src="./js/slider.js"></script>

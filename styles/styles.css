@@ -695,6 +695,7 @@ stroke: #0a0602;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 999;
 }
 
 .mob-button-close {
@@ -739,4 +740,28 @@ stroke: #0a0602;
 
 .mobile-menu-socials-icon {
     stroke: var(--white);
+}
+
+/* pop up */
+
+.pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+}
+
+.modal-label-container {}
+
+.pop-label-input {
+    position: relative;
+}
+
+.pop-input-svg {
+    position: absolute;
+}
+
+.pop-up-textarea label {
+    display: flex;
+    flex-direction: column;
 }
