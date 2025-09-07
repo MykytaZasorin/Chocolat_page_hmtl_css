@@ -831,4 +831,14 @@ stroke: #0a0602;
 .pop-up-textarea textarea {
     min-height: 91px;
     padding: 18px 14px;
+    border: 1.50px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+}
+
+.pop-up-textarea textarea::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
 }
