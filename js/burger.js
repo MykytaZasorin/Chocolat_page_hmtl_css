@@ -1,6 +1,7 @@
 (() => {
   const openBtns = document.querySelectorAll("[data-modal-open]");
   const closeBtns = document.querySelectorAll("[data-modal-close]");
+  const menuLinks = document.querySelectorAll(".mob-menu-link");
 
   openBtns.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -13,6 +14,13 @@
   closeBtns.forEach(btn => {
     btn.addEventListener("click", () => {
       const modal = btn.closest("[data-modal]");
+      modal.classList.remove("is-open");
+    });
+  });
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      const modal = link.closest("[data-modal]");
       modal.classList.remove("is-open");
     });
   });
