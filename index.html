@@ -567,73 +567,92 @@
     </footer>
 
     <div class="pop-up" data-modal="form">
-      <button
-        type="button"
-        class="mob-button-close"
-        aria-label="Close window"
-        data-modal-close
-      >
-        <svg class="mobile-menu-icon-close" width="14" height="14">
-          <use href="./images/icons/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <h2>
-        leave a reviev <br />
-        about <span class="text-orange">our chocolate</span>
-      </h2>
-      <form class="pop-up-form">
-        <label
-          >Name
-          <div class="modal-label-container">
-            <input
-              class="pop-label-input"
-              type="text"
-              name="user-name"
-              maxlength="15"
-              required
-            />
-            <svg class="pop-input-svg" width="" height="">
-              <use href=""></use>
-            </svg>
-          </div>
-        </label>
-        <label
-          >Email
-          <div class="modal-label-container">
-            <input
-              class="pop-label-input"
-              type="text"
-              name="user-email"
-              maxlength="15"
-              required
-            />
-            <svg class="pop-input-svg" width="" height="">
-              <use href=""></use>
-            </svg>
-          </div>
-        </label>
-        <label
-          >Phone number
-          <div class="modal-label-container">
-            <input
-              class="pop-label-input"
-              type="text"
-              name="user-phone"
-              maxlength="15"
-              required
-            />
-            <svg class="pop-input-svg" width="" height="">
-              <use href=""></use>
-            </svg>
-          </div>
-        </label>
-        <div class="pop-up-textarea">
-          <label
-            >Comment
-            <textarea name="user-comment" placeholder="Enter text"></textarea>
+      <div class="pop-up-window">
+        <button
+          type="button"
+          class="mob-button-close"
+          aria-label="Close window"
+          data-modal-close
+        >
+          <svg class="mobile-menu-icon-close" width="14" height="14">
+            <use href="./images/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="header-two modal-header">
+          leave a reviev <br />
+          about <span class="text-orange">our chocolate</span>
+        </h2>
+        <form class="pop-up-form">
+          <label class="pop-label-input-text"
+            >Name
+            <div class="modal-label-container">
+              <input
+                class="pop-label-input"
+                type="text"
+                name="user-name"
+                maxlength="15"
+                required
+              />
+              <svg class="pop-input-svg" width="" height="">
+                <use href=""></use>
+              </svg>
+            </div>
           </label>
-        </div>
-      </form>
+          <label class="pop-label-input-text"
+            >Email
+            <div class="modal-label-container">
+              <input
+                class="pop-label-input"
+                type="text"
+                name="user-email"
+                maxlength="15"
+                required
+              />
+              <svg class="pop-input-svg" width="" height="">
+                <use href=""></use>
+              </svg>
+            </div>
+          </label>
+          <label class="pop-label-input-text"
+            >Phone number
+            <div class="modal-label-container">
+              <input
+                class="pop-label-input"
+                type="text"
+                name="user-phone"
+                maxlength="15"
+                required
+              />
+              <svg class="pop-input-svg" width="" height="">
+                <use href=""></use>
+              </svg>
+            </div>
+          </label>
+          <div class="pop-up-textarea-container">
+            <label class="pop-up-textarea pop-label-input-text"
+              >Comment
+              <textarea name="user-comment" placeholder="Enter text"></textarea>
+            </label>
+          </div>
+          <div class="pop-up-privacy">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+              id="user-privacy"
+              title="Privacy agreement"
+            />
+            <span class="pop-custom-checkbox"></span>
+            <span class="pop-privacy-agreement"
+              >I accept the terms and conditions of the
+              <span class="text-orange">Privacy Policy</span></span
+            >
+          </div>
+          <button class="" type="submit">Send</button>
+        </form>
+      </div>
     </div>
 
     <script src="./js/burger.js"></script>
