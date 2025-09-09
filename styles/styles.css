@@ -846,6 +846,54 @@ stroke: #0a0602;
     color: rgba(64, 64, 64, 0.3);
 }
 
+/* .pop-up-privacy {
+    display: flex;
+} */
+
+.casual-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.casual-checkbox > span {
+    align-self: flex-start;
+}
+
+.pop-custom-checkbox {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    position: relative;
+    margin-right: 8px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    background-color: var(--white);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
+    cursor: pointer;
+}
+
+#user-privacy:checked + .casual-checkbox > .pop-custom-checkbox {
+    background-color: #fd9222;
+    fill: var(--orange);
+    border: none;
+}
+
+#user-privacy:checked+.casual-checkbox>.pop-custom-checkbox > .pop-custom-checkbox-icon {
+    fill: var(--white);
+}
+
+.pop-privacy-agreement {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.6);
+}
+
 .btn-send {
     border-radius: 100px;
     width: 93px;
