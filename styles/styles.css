@@ -215,10 +215,13 @@ stroke: #0a0602;
 .btn-scroll {
     background-color: transparent;
     color: var(--white);
+    border: none;
+}
+
+.btn-scroll a {
     display: flex;
     gap: 12px;
     align-items: center;
-    border: none;
 }
 
 .svg-background {
@@ -841,4 +844,15 @@ stroke: #0a0602;
     font-size: 13px;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
+}
+
+.btn-send {
+    border-radius: 100px;
+    width: 93px;
+    height: 41px;
+    background: var(--orange);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--white);
+    border: none;
 }

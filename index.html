@@ -143,19 +143,23 @@
           </h1>
           <div class="greeting-section-buttons">
             <button type="button" class="btn-buy">Buy now</button>
-            <button type="button" class="btn-how">How it's made</button>
+            <button type="button" class="btn-how">
+              <a href="#How-its-made">How it's made</a>
+            </button>
             <button type="button" class="btn-scroll">
-              scroll down
-              <span class="svg-background">
-                <svg
-                  class="scroll-svg"
-                  width="16"
-                  height="16"
-                  aria-label="scroll-down"
-                >
-                  <use href="./images/icons/icons.svg#icon-angle"></use>
-                </svg>
-              </span>
+              <a href="#footer"
+                >scroll down
+                <span class="svg-background">
+                  <svg
+                    class="scroll-svg"
+                    width="16"
+                    height="16"
+                    aria-label="scroll-down"
+                  >
+                    <use href="./images/icons/icons.svg#icon-angle"></use>
+                  </svg>
+                </span>
+              </a>
             </button>
           </div>
         </div>
@@ -515,7 +519,7 @@
       </section>
     </main>
 
-    <footer class="footer section">
+    <footer class="footer section" id="footer">
       <div class="container footer-container">
         <div class="footer-head">
           <p class="footer-greeting">
@@ -650,7 +654,7 @@
               <span class="text-orange">Privacy Policy</span></span
             >
           </div>
-          <button class="" type="submit">Send</button>
+          <button class="btn-send" type="submit">Send</button>
         </form>
       </div>
     </div>
